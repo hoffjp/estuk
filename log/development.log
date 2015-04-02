@@ -247,3 +247,604 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (8.3ms)
   Rendered devise/sessions/new.html.erb within layouts/application (268.8ms)
 Completed 200 OK in 418ms (Views: 399.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 23:46:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 102ms
+
+SyntaxError (/Users/Jake/Desktop/workspace/estuk/app/views/layouts/application.html.erb:13: unknown regexp options - bdy
+unmatched close parenthesis: /header>
+<%= yield );@output_buffer.safe_append='
+
+</
+/Users/Jake/Desktop/workspace/estuk/app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+</html>
+ ^
+/Users/Jake/Desktop/workspace/estuk/app/views/layouts/application.html.erb:14: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:13: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:14: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for ::1 at 2015-04-01 23:47:05 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/Users/Jake/Desktop/workspace/estuk/app/views/layouts/application.html.erb:13: unknown regexp options - bdy
+unmatched close parenthesis: /header>
+<%= yield );@output_buffer.safe_append='
+
+</
+/Users/Jake/Desktop/workspace/estuk/app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+</html>
+ ^
+/Users/Jake/Desktop/workspace/estuk/app/views/layouts/application.html.erb:14: unterminated regexp meets end of file):
+  app/views/layouts/application.html.erb:13: unknown regexp options - bdy
+  app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+  app/views/layouts/application.html.erb:14: unterminated regexp meets end of file
+
+
+
+
+Started GET "/" for ::1 at 2015-04-01 23:47:33 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 418ms (Views: 417.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/application-0a1bb9195caaef16f233799b53103472.css?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/application-fa61741107feac753ce93e96bcecdc10.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-01 23:47:34 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 23:48:35 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 129ms (Views: 128.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/application-0a1bb9195caaef16f233799b53103472.css?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/assets/application-fa61741107feac753ce93e96bcecdc10.js?body=1" for ::1 at 2015-04-01 23:48:35 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 23:49:59 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.html.erb (14.2ms)
+Completed 500 Internal Server Error in 155ms
+
+ActionView::Template::Error (undefined local variable or method `books_path' for #<#<Class:0x007fa81cbec500>:0x007fa81c8a9ac8>):
+    16:       
+    17:  
+    18:       <ul class="nav navbar-nav navbar-right">
+    19:       <li><%= link_to "Books", books_path %></li>
+    20:       
+    21:       <% if current_user %>
+    22:       
+  app/views/layouts/_header.html.erb:19:in `_app_views_layouts__header_html_erb___2951267076007370066_70179977112080'
+  app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___3280243218937777365_70180008394900'
+
+
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.0ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (146.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 23:51:25 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+Completed 200 OK in 146ms (Views: 145.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/application-0a1bb9195caaef16f233799b53103472.css?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-04-01 23:51:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/assets/application-fa61741107feac753ce93e96bcecdc10.js?body=1" for ::1 at 2015-04-01 23:51:26 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 23:51:28 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+Completed 200 OK in 131ms (Views: 130.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 23:51:29 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 143ms (Views: 142.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 23:52:00 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 138ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/application-0a1bb9195caaef16f233799b53103472.css?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-04-01 23:52:00 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-04-01 23:52:01 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-04-01 23:52:01 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-01 23:52:01 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-01 23:52:01 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-04-01 23:52:01 -0400
+
+
+Started GET "/assets/application-fa61741107feac753ce93e96bcecdc10.js?body=1" for ::1 at 2015-04-01 23:52:01 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 23:53:57 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined local variable or method `books_path' for #<#<Class:0x007fa81cbec500>:0x007fa81ca99270>):
+    2: <h1>Welcome to our store</h1>
+    3: <p>The largest online Digital Books Store</p>
+    4: <%= link_to "Sign In", new_user_session_path, class: "btn btn-primary btn-block"  %>
+    5: <%= link_to "Books", books_path, class: "btn btn-primary btn-block" %>
+    6: <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-block" %>
+    7: </div>
+    8:  
+  app/views/pages/home.html.erb:5:in `_app_views_pages_home_html_erb__2373070015386499689_70180006043580'
+
+
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.8ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.1ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.3ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Jake/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (106.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-01 23:54:33 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 127ms (Views: 126.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/application-0a1bb9195caaef16f233799b53103472.css?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/assets/application-fa61741107feac753ce93e96bcecdc10.js?body=1" for ::1 at 2015-04-01 23:54:33 -0400
+
+
+Started GET "/" for ::1 at 2015-04-01 23:55:17 -0400
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 184ms (Views: 182.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/application-0a1bb9195caaef16f233799b53103472.css?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/assets/application-fa61741107feac753ce93e96bcecdc10.js?body=1" for ::1 at 2015-04-01 23:55:18 -0400
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-01 23:55:45 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (226.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 472ms (Views: 459.2ms | ActiveRecord: 0.4ms)
