@@ -8977,3 +8977,603 @@ Processing by BooksController#index as HTML
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
   Rendered layouts/_header.html.erb (1.6ms)
 Completed 200 OK in 161ms (Views: 159.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:27:52 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (10.1ms)
+Completed 200 OK in 209ms (Views: 198.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/1/edit" for ::1 at 2015-06-23 22:27:55 -0400
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-23 22:27:55 -0400
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:27:55 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (1.1ms)
+  Rendered books/index.html.erb within layouts/application (19.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 180ms (Views: 178.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:28:50 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (1.3ms)
+  Rendered books/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 156ms (Views: 153.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/books-e2a22942bba727c1f7ce07ceffeb8a92.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/devise-0f04319b6df26de7d7262c30ffe3b2db.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/application-8f68654919bd2bcdedffbabd367be04e.css?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/assets/book-262c5bd4a7c3e5687f63b60a67b56ac9.jpg" for ::1 at 2015-06-23 22:28:50 -0400
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:28:52 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (1.0ms)
+  Rendered books/index.html.erb within layouts/application (3.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 162ms (Views: 160.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/devise-0f04319b6df26de7d7262c30ffe3b2db.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/books-e2a22942bba727c1f7ce07ceffeb8a92.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/application-8f68654919bd2bcdedffbabd367be04e.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-06-23 22:28:52 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/assets/book-262c5bd4a7c3e5687f63b60a67b56ac9.jpg" for ::1 at 2015-06-23 22:28:53 -0400
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:29:17 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (1.4ms)
+  Rendered books/index.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 153ms (Views: 151.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/books-e2a22942bba727c1f7ce07ceffeb8a92.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/devise-0f04319b6df26de7d7262c30ffe3b2db.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/application-8f68654919bd2bcdedffbabd367be04e.css?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/assets/book-262c5bd4a7c3e5687f63b60a67b56ac9.jpg" for ::1 at 2015-06-23 22:29:17 -0400
+
+
+Started GET "/" for ::1 at 2015-06-23 22:29:22 -0400
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:29:22 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = 't'
+  Rendered books/_book.html.erb (1.1ms)
+  Rendered books/index.html.erb within layouts/application (5.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 162ms (Views: 161.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:29:24 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = 't'
+  Rendered books/_book.html.erb (1.0ms)
+  Rendered books/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 147ms (Views: 145.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2015-06-23 22:29:26 -0400
+Processing by PagesController#dashboard as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered pages/dashboard.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 250ms (Views: 184.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:29:29 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = 't'
+  Rendered books/_book.html.erb (1.2ms)
+  Rendered books/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 154ms (Views: 152.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:31:07 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = 't'
+  Rendered books/_book.html.erb (1.2ms)
+  Rendered books/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 155ms (Views: 153.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/books-e2a22942bba727c1f7ce07ceffeb8a92.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap-3d4ac324e8c8a16c343c471da829ffcc.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides-caaef7eff4329c524ea65567896bba3b.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/devise-0f04319b6df26de7d7262c30ffe3b2db.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome-c0e728c92bc26bc30bac33c4d3f26420.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/application-8f68654919bd2bcdedffbabd367be04e.css?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition-8cd2695d7ee2b30315b7e024422eb427.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert-f0634df255bb1dc37f98c8be82434bec.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-a234ed5390532f267df4f5a13236de95.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal-b75feab289989a62ead5720c2b655fca.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-5e0c86e7fbc3752c3898df3c690e52fb.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab-54d92c1012635a68526fcf2590679f4a.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-5a9f4a24a67c380028b0164a546de5f4.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover-9666a38e5d68a25bd4e839bee36f5d30.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button-1189204cf501fc7ddbe0384f5c7a3e04.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse-4d358a4cbe9ca0a9cc3e124610787f88.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel-65843039ab1c8b32832fda680448146a.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix-4aa497ad1a679d7fa3de7aa10db2c248.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap-bfd36ba45e965dc20fa69e1153274989.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/books-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/application-6227e973a7bdc2dc64f2003ba40d9cc2.js?body=1" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/assets/book-262c5bd4a7c3e5687f63b60a67b56ac9.jpg" for ::1 at 2015-06-23 22:31:07 -0400
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:31:22 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 200 OK in 174ms (Views: 172.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1/edit" for ::1 at 2015-06-23 22:31:25 -0400
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-23 22:31:25 -0400
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:31:25 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (1.7ms)
+  Rendered books/index.html.erb within layouts/application (19.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 191ms (Views: 190.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:36 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 200 OK in 281ms (Views: 278.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:37 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 144ms (Views: 142.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:40 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 145ms (Views: 143.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:41 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 136ms (Views: 134.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:41 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:42 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.1ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 162ms (Views: 160.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:32:44 -0400
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."availability" = 't'[0m
+  Rendered books/_book.html.erb (1.0ms)
+  Rendered books/index.html.erb within layouts/application (18.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 190ms (Views: 188.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/1" for ::1 at 2015-06-23 22:32:46 -0400
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 159ms (Views: 157.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1/edit" for ::1 at 2015-06-23 22:32:47 -0400
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-23 22:32:47 -0400
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/books
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/books" for ::1 at 2015-06-23 22:32:47 -0400
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.2ms)[0m  SELECT "books".* FROM "books" WHERE "books"."availability" = 't'
+  Rendered books/_book.html.erb (1.4ms)
+  Rendered books/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 165ms (Views: 163.3ms | ActiveRecord: 0.3ms)
